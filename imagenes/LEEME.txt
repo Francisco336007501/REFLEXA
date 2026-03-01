@@ -1,0 +1,56 @@
+========================================
+  MODO IMAGEN - CONCEPTO
+========================================
+
+1) IMAGEN BASE = "Solo hay uno"
+   Es el recurso unico (ej. un salvavidas). Se muestra arriba.
+
+2) DOS IMAGENES = Las dos opciones
+   Despues aparece la pregunta: "A quien se lo das?"
+   El usuario ve DOS imagenes y elige UNA (a quien darle el recurso).
+
+========================================
+  COMO ANADIR UN DILEMA (ej. salvavidas)
+========================================
+
+PASO 1 - Tres imagenes por dilema
+---------------------------------
+Para cada dilema necesitas 3 archivos en public/imagenes/:
+
+  a) Imagen BASE (el recurso unico). Ej: DONA_SALVAVIDAS.png
+  b) Imagen OPCION A (a quien podrias darselo). Ej: opcion_a_salvavidas.png
+  c) Imagen OPCION B (la otra opcion). Ej: opcion_b_salvavidas.png
+
+PASO 2 - Editar PlayImage.jsx
+-----------------------------
+Abre: src/pages/PlayImage.jsx
+
+Busca DILEMAS_IMAGEN y anade un objeto asi:
+
+  {
+    id: 1,
+    baseImage: "DONA_SALVAVIDAS.png",
+    optionA: { image: "opcion_a_salvavidas.png", label: "Persona A" },
+    optionB: { image: "opcion_b_salvavidas.png", label: "Persona B" }
+  }
+
+- baseImage = nombre del archivo del recurso unico
+- optionA / optionB = imagen de cada opcion + label (texto debajo)
+
+PASO 3 - Nombres de archivo
+---------------------------
+Los nombres en "baseImage", "optionA.image" y "optionB.image"
+deben coincidir EXACTAMENTE con los archivos en public/imagenes/.
+
+========================================
+  EJEMPLO SALVAVIDAS (ya configurado)
+========================================
+
+Ya tienes: DONA_SALVAVIDAS.png (la base).
+
+Falta anadir en public/imagenes/:
+  - opcion_a_salvavidas.png  (primera opcion: a quien darle el salvavidas)
+  - opcion_b_salvavidas.png  (segunda opcion)
+
+Y si quieres cambiar los textos "Opcion A" / "Opcion B", edita en
+PlayImage.jsx los "label" de optionA y optionB (ej. "Nino" y "Anciano").
