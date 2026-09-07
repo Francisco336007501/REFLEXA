@@ -20,33 +20,59 @@ A través de dilemas presentados en distintos formatos, el usuario debe elegir e
 
 Al finalizar, una inteligencia artificial analiza el conjunto de decisiones y genera una **reflexión personalizada**, buscando tensiones, patrones y contrastes entre las elecciones realizadas.
 
-REFLEXA no busca calificar decisiones como correctas o incorrectas.
-
-Busca crear un espacio para **pensar sobre ellas**.
+REFLEXA no busca calificar decisiones como correctas o incorrectas. Busca crear un espacio para **pensar sobre ellas**.
 
 ---
 
-## 📸 Experiencia
+## 📸 La experiencia
+
+REFLEXA está construida como un recorrido. Desde la entrada, cada etapa prepara al usuario para enfrentarse a distintos escenarios y observar sus propias decisiones desde otra perspectiva.
+
+### Inicio
+
+La experiencia comienza con una interfaz sencilla que da acceso directo a REFLEXA y mantiene la atención en el proceso de reflexión.
 
 <p align="center">
-  <img src="./public/menú.png" width="800" alt="Pantalla de bienvenida de REFLEXA">
+  <img src="./public/menú.png" width="650" alt="Inicio de REFLEXA">
 </p>
 
-<p align="center">
-  <img src="./public/hollow.png" width="800" alt="Hollow">
-</p>
+### Conoce a Hollow
+
+**Hollow** es la presencia que acompaña al usuario durante la experiencia y conecta las distintas etapas de REFLEXA.
 
 <p align="center">
-  <img src="./public/modo.png" width="800" alt="Selección de contexto">
+  <img src="./public/hollow.png" width="430" alt="Hollow">
 </p>
 
-<p align="center">
-  <img src="./public/modo2.png" width="800" alt="Modos de REFLEXA">
-</p>
+### Elige el contexto
+
+Antes de comenzar, el usuario decide desde qué entorno quiere enfrentarse a los dilemas.
 
 <p align="center">
-  <img src="./public/prueba.png" width="800" alt="Dilema interactivo">
+  <img src="./public/modo.png" width="650" alt="Selección de contexto de REFLEXA">
 </p>
+
+La experiencia puede desarrollarse desde un contexto **personal** o **laboral**, manteniendo la misma idea central pero modificando el tipo de situaciones presentadas.
+
+### Diferentes formas de decidir
+
+REFLEXA no presenta todos los escenarios de la misma manera. Los dilemas pueden aparecer mediante **imagen, texto o audio**.
+
+<p align="center">
+  <img src="./public/modo2.png" width="650" alt="Modos de REFLEXA">
+</p>
+
+Cada formato cambia la manera en que se recibe e interpreta una situación antes de tomar una decisión.
+
+### Decisiones bajo presión
+
+Los escenarios presentan una situación concreta y un tiempo limitado para elegir entre diferentes alternativas.
+
+<p align="center">
+  <img src="./public/prueba.png" width="650" alt="Dilema interactivo de REFLEXA">
+</p>
+
+Las elecciones realizadas durante la sesión se conservan como parte del recorrido y posteriormente sirven como base para generar la reflexión final.
 
 ---
 
@@ -71,8 +97,6 @@ Busca crear un espacio para **pensar sobre ellas**.
 
 ## 🎮 Modos
 
-REFLEXA permite experimentar los dilemas de diferentes maneras.
-
 ### 🖼️ Imagen
 
 Situaciones representadas visualmente donde el usuario debe interpretar el contexto y tomar una decisión.
@@ -85,7 +109,7 @@ Dilemas planteados mediante escenarios escritos y diferentes alternativas.
 
 Situaciones construidas alrededor de contenido auditivo para cambiar la forma en que se percibe el dilema.
 
-### 💼 Laboral
+### 💼 Contexto laboral
 
 Escenarios enfocados en decisiones y tensiones que pueden aparecer dentro de un entorno profesional.
 
@@ -95,9 +119,7 @@ Escenarios enfocados en decisiones y tensiones que pueden aparecer dentro de un 
 
 Al terminar una sesión, las decisiones son enviadas al backend de REFLEXA.
 
-La IA no analiza cada respuesta de manera aislada. Busca relaciones entre las decisiones para generar una reflexión breve basada en el comportamiento observado durante la sesión.
-
-La arquitectura utilizada es:
+La IA no analiza cada respuesta de manera aislada. Busca relaciones entre las decisiones para generar una reflexión breve basada en el conjunto de elecciones realizadas durante la experiencia.
 
 ```text
 Usuario
@@ -119,7 +141,7 @@ GPT-OSS 20B
 Reflexión
 ```
 
-La API key permanece fuera del frontend y las solicitudes hacia Groq son gestionadas mediante un **Cloudflare Worker**.
+La API key permanece fuera del frontend. Las solicitudes hacia Groq son gestionadas mediante un **Cloudflare Worker**, evitando exponer credenciales en la aplicación.
 
 ---
 
@@ -145,7 +167,7 @@ La API key permanece fuera del frontend y las solicitudes hacia Groq son gestion
 - CSS
 - Context API
 
-### Backend / IA
+### Backend e IA
 
 - Cloudflare Workers
 - Groq API
@@ -185,7 +207,7 @@ Selección de contexto
 
 ---
 
-## 📁 Estructura
+## 📁 Estructura del proyecto
 
 ```text
 src/
@@ -203,7 +225,7 @@ src/
 └── main.jsx
 ```
 
-La navegación principal funciona como una SPA mediante el estado de la aplicación y renderizado condicional de las diferentes vistas.
+REFLEXA funciona como una **Single Page Application (SPA)**. La navegación entre las diferentes partes de la experiencia se gestiona mediante el estado de la aplicación y renderizado condicional.
 
 ---
 
@@ -239,7 +261,7 @@ Vite mostrará la dirección local donde se está ejecutando REFLEXA.
 
 ## 🔐 Variables de entorno
 
-El frontend utiliza una variable para definir el endpoint encargado de generar las reflexiones.
+El frontend utiliza una variable de entorno para definir el endpoint encargado de generar las reflexiones.
 
 Crea un archivo `.env`:
 
@@ -249,46 +271,36 @@ VITE_REFLEXION_API_URL=https://TU-WORKER.workers.dev
 
 > La API key de Groq **no debe almacenarse en el frontend ni publicarse en GitHub**.
 
-La clave se configura como variable de entorno dentro del Worker.
-
----
-
-## 🧠 Hollow
-
-<p align="center">
-  <img src="./public/hollow.png" width="650" alt="Hollow REFLEXA">
-</p>
-
-**Hollow** acompaña al usuario durante la experiencia.
-
-No está diseñado como juez de las decisiones, sino como parte de la identidad narrativa de REFLEXA y como guía hacia la reflexión final.
+La clave se configura como variable de entorno dentro del Cloudflare Worker.
 
 ---
 
 ## 🌐 Demo
 
-REFLEXA se encuentra disponible en:
+Puedes probar REFLEXA directamente desde el navegador:
 
 ### 👉 [iareflexa.netlify.app](https://iareflexa.netlify.app/)
 
-No es necesario instalar nada para probar la experiencia.
+No es necesario instalar nada para recorrer la experiencia.
 
 ---
 
 ## 🎯 Objetivo
 
-REFLEXA explora una pregunta sencilla:
+REFLEXA explora una pregunta:
 
 > **¿Qué pueden mostrar nuestras decisiones cuando dejamos de observarlas de forma aislada?**
 
-El proyecto combina desarrollo web, diseño de experiencia e inteligencia artificial para convertir una serie de elecciones en una experiencia de reflexión.
+El proyecto combina **desarrollo web, diseño de experiencia e inteligencia artificial** para transformar una serie de elecciones en una experiencia de reflexión.
 
 ---
 
 <div align="center">
 
-**REFLEXA**
+### REFLEXA
 
 *El espejo es el mismo.*
+
+[Probar la experiencia](https://iareflexa.netlify.app/)
 
 </div>
