@@ -29,25 +29,24 @@ Busca crear un espacio para **pensar sobre ellas**.
 ## 📸 Experiencia
 
 <p align="center">
-  <img src="./docs/images/welcome.png" width="800" alt="Pantalla de bienvenida de REFLEXA">
+  <img src="./public/images/menú.png" width="800" alt="Pantalla de bienvenida de REFLEXA">
 </p>
 
 <p align="center">
-  <img src="./docs/images/hollow.png" width="800" alt="Hollow">
+  <img src="./public/images/hollow.png" width="800" alt="Hollow">
 </p>
 
 <p align="center">
-  <img src="./docs/images/context.png" width="800" alt="Selección de contexto">
+  <img src="./public/images/modo.png" width="800" alt="Selección de contexto">
 </p>
 
 <p align="center">
-  <img src="./docs/images/modes.png" width="800" alt="Modos de REFLEXA">
+  <img src="./public/images/modo2.png" width="800" alt="Modos de REFLEXA">
 </p>
 
 <p align="center">
-  <img src="./docs/images/dilemma.png" width="800" alt="Dilema interactivo">
+  <img src="./public/images/prueba.png" width="800" alt="Dilema interactivo">
 </p>
-
 ---
 
 ## ✨ Características
