@@ -255,7 +255,7 @@ La clave se configura como variable de entorno dentro del Worker.
 ## 🧠 Hollow
 
 <p align="center">
-  <img src="./docs/images/hollow.png" width="650" alt="Hollow REFLEXA">
+  <img src="./images/hollow.png" width="650" alt="Hollow REFLEXA">
 </p>
 
 **Hollow** acompaña al usuario durante la experiencia.
