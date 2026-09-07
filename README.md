@@ -1,12 +1,14 @@
 <div align="center">
 
-# REFLEXA
+# 🪞 REFLEXA
 
-### Simulación de decisiones · Análisis de comportamiento · Inteligencia Artificial
+### Plataforma interactiva de toma de decisiones y análisis con IA
 
-Plataforma web interactiva orientada a explorar **cómo cambia la toma de decisiones ante presión, incertidumbre, dilemas éticos e influencia del contexto**, con aplicaciones especialmente enfocadas en **Recursos Humanos, capacitación y entornos organizacionales**. :contentReference[oaicite:0]{index=0}
+REFLEXA presenta **dilemas bajo presión** para explorar cómo una persona toma decisiones ante distintos contextos, con un enfoque especial en **Recursos Humanos, reclutamiento y entornos organizacionales**.
 
-[🌐 Probar REFLEXA](https://iareflexa.netlify.app/)
+[🌐 **Probar REFLEXA**](https://iareflexa.netlify.app/)
+
+<br>
 
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
@@ -19,277 +21,307 @@ Plataforma web interactiva orientada a explorar **cómo cambia la toma de decisi
 
 ---
 
-## 🪞 ¿Qué es REFLEXA?
+## ¿Qué es REFLEXA? 🧠
 
-Las decisiones no ocurren en condiciones ideales.
+REFLEXA es una aplicación web diseñada para presentar **situaciones y dilemas donde el contexto importa tanto como la decisión**.
 
-La presión por resultados, la incertidumbre, el tiempo disponible, los valores personales y organizacionales o la presencia de una figura de autoridad pueden modificar la manera en que una persona responde ante una situación.
+Presión por resultados, tiempo limitado, incertidumbre, jerarquía o conflictos entre intereses personales y organizacionales pueden modificar la forma en que una persona responde ante una misma situación.
 
-**REFLEXA** parte de ese problema.
+En lugar de funcionar como un cuestionario tradicional, REFLEXA construye una experiencia interactiva en la que el usuario debe **interpretar escenarios y tomar decisiones**.
 
-La plataforma presenta dilemas interactivos en los que el usuario debe tomar decisiones dentro de diferentes contextos. El objetivo es observar las elecciones realizadas y utilizar inteligencia artificial para encontrar tendencias y generar retroalimentación personalizada. :contentReference[oaicite:1]{index=1}
+Al terminar una sesión, las respuestas son procesadas mediante inteligencia artificial para generar una **retroalimentación basada en el conjunto de decisiones realizadas**.
 
-A diferencia de una prueba tradicional, REFLEXA **no está diseñada para declarar una respuesta como correcta o incorrecta**. Su propuesta utiliza los dilemas como una herramienta para explorar el comportamiento, fomentar la autorreflexión y obtener información sobre la forma en que una persona responde ante diferentes escenarios. :contentReference[oaicite:2]{index=2}
+> REFLEXA no busca reducir una decisión a “correcta” o “incorrecta”.  
+> Busca observar qué ocurre cuando una persona tiene que decidir dentro de un contexto.
 
 ---
 
-## 💼 REFLEXA en Recursos Humanos
+## Recursos Humanos y reclutamiento 💼
 
-Uno de los principales campos de aplicación de REFLEXA es el **entorno laboral y organizacional**.
+Uno de los principales enfoques de REFLEXA es su aplicación en **Recursos Humanos y entornos organizacionales**.
 
-La plataforma puede utilizarse como complemento en procesos relacionados con:
+Una entrevista o cuestionario convencional puede mostrar qué responde un candidato cuando tiene tiempo para construir una respuesta.
 
-- Selección de personal
+REFLEXA propone algo diferente: colocar al usuario frente a **situaciones concretas**, limitar el tiempo disponible y observar cómo responde cuando existen tensiones entre diferentes alternativas.
+
+Puede funcionar como herramienta complementaria en procesos relacionados con:
+
+- Reclutamiento y selección
 - Capacitación
 - Desarrollo organizacional
-- Pensamiento crítico
 - Ética profesional
-- Análisis de decisiones y comportamiento
-- Identificación de tendencias
-- Retroalimentación personalizada
+- Pensamiento crítico
+- Toma de decisiones
+- Simulación de situaciones laborales
+- Retroalimentación individual
 
-El proyecto contempla un enfoque B2B dirigido a **empresas pequeñas, medianas y grandes, departamentos de Recursos Humanos y consultoras especializadas**, además de aplicaciones educativas y de uso individual. :contentReference[oaicite:3]{index=3}
-
-La intención no es sustituir una evaluación profesional de Recursos Humanos, sino ofrecer una experiencia digital adicional donde sea posible observar cómo responde una persona ante situaciones más cercanas a conflictos reales.
-
----
-
-## ⚡ Más que responder un cuestionario
-
-REFLEXA utiliza **dilemas** porque una decisión aislada dice poco sin conocer el contexto en el que fue tomada.
-
-Los escenarios pueden incorporar:
-
-- Presión por resultados
-- Tiempo limitado
-- Incertidumbre
-- Conflictos éticos
-- Influencia de autoridad
-- Conflictos entre valores personales y organizacionales
-
-Esto permite construir situaciones donde ninguna alternativa necesariamente representa una respuesta completamente correcta o incorrecta. :contentReference[oaicite:4]{index=4}
+REFLEXA también contempla una experiencia general fuera del contexto empresarial, utilizando el mismo sistema de dilemas desde una perspectiva personal.
 
 ---
 
-# 🧭 Cómo funciona
+## ¿Cómo funciona? ⚡
 
-La experiencia está organizada como un recorrido.
+La experiencia está diseñada como un recorrido. El usuario no entra directamente a una batería de preguntas: primero conoce la plataforma, selecciona el contexto y la modalidad de la experiencia y después comienza a enfrentarse a los dilemas.
+
+### El punto de entrada
+
+Después del onboarding, el usuario llega al menú principal de REFLEXA.
+
+Desde aquí puede comenzar una experiencia, conocer más sobre la plataforma o modificar sus ajustes.
+
+<p align="center">
+  <img src="./public/menú.png" width="620" alt="Menú principal de REFLEXA">
+</p>
+
+La interfaz busca mantener la navegación sencilla y concentrar la atención en el recorrido que está por comenzar.
+
+---
+
+### Hollow: el guía de REFLEXA
+
+Durante la experiencia aparece **Hollow**, el personaje encargado de acompañar al usuario y explicar las diferentes etapas de la plataforma.
+
+<p align="center">
+  <img src="./public/hollow.png" width="360" alt="Hollow, guía de REFLEXA">
+</p>
+
+Hollow introduce los modos, contextualiza diferentes partes de la experiencia y ayuda a que el usuario comprenda qué está por ocurrir antes de enfrentarse a los dilemas.
+
+No funciona como evaluador ni determina si una decisión es correcta. Es el vínculo narrativo entre el usuario y REFLEXA.
+
+---
+
+### Un mismo sistema, diferentes contextos
+
+Antes de iniciar una sesión, el usuario puede decidir desde qué contexto quiere enfrentarse a las situaciones.
+
+<p align="center">
+  <img src="./public/modo.png" width="620" alt="Selección de contexto en REFLEXA">
+</p>
+
+El **modo normal** utiliza escenarios generales y permite experimentar REFLEXA desde una perspectiva individual.
+
+El **modo laboral** traslada el sistema hacia situaciones relacionadas con organizaciones y Recursos Humanos. Los escenarios pueden involucrar presión por resultados, jerarquía, responsabilidad profesional, conflictos entre compañeros, incertidumbre o tensiones entre intereses personales y organizacionales.
+
+De esta manera, la lógica de REFLEXA permanece, pero cambia el contexto en el que se toman las decisiones.
+
+---
+
+### No todos los dilemas se presentan igual
+
+Después de seleccionar el contexto, REFLEXA permite cambiar la forma en la que se recibe la situación.
+
+<p align="center">
+  <img src="./public/modo2.png" width="620" alt="Modalidades disponibles en REFLEXA">
+</p>
+
+Los dilemas pueden construirse mediante **imagen, texto o audio**.
+
+En el modo imagen, la información principal se comunica visualmente. En texto, la situación se desarrolla mediante una descripción escrita. En audio, parte de la información debe ser interpretada de forma auditiva antes de elegir.
+
+Cambiar el medio permite variar también la manera en que el usuario recibe e interpreta la información antes de tomar una decisión.
+
+---
+
+### El momento de decidir
+
+Cuando comienza una prueba, REFLEXA presenta un escenario y diferentes alternativas.
+
+El usuario dispone de un **tiempo limitado para tomar una decisión**.
+
+<p align="center">
+  <img src="./public/prueba.png" width="650" alt="Ejemplo de dilema interactivo en REFLEXA">
+</p>
+
+La presión temporal forma parte de la experiencia. El objetivo no es únicamente conocer qué opción fue seleccionada, sino observar las decisiones dentro de las condiciones en las que fueron tomadas.
+
+Durante la sesión, REFLEXA conserva las respuestas para utilizarlas posteriormente como contexto de la retroalimentación.
+
+---
+
+## Del dilema a la reflexión 🔄
+
+El recorrido completo puede representarse así:
 
 ```text
 Inicio
-   ↓
+  │
+  ▼
 Onboarding
-   ↓
-Nombre + Idioma
-   ↓
+  │
+  ▼
+Nombre / Idioma
+  │
+  ▼
 Menú principal
-   ↓
+  │
+  ▼
 Selección de contexto
-   ├── Modo normal
-   └── Modo laboral
-          ↓
-    Selección de experiencia
-    ├── Imagen
-    ├── Texto
-    └── Audio
-          ↓
-       Dilemas
-          ↓
-   Decisiones bajo tiempo
-          ↓
-   Registro de respuestas
-          ↓
-   Análisis mediante IA
-          ↓
-   Reflexión personalizada
+  │
+  ├──────────────┐
+  ▼              ▼
+Normal         Laboral
+  │              │
+  └──────┬───────┘
+         ▼
+Selección de modalidad
+  │
+  ├── Imagen
+  ├── Texto
+  └── Audio
+         │
+         ▼
+      Dilemas
+         │
+         ▼
+ Decisiones bajo tiempo
+         │
+         ▼
+ Registro de la sesión
+         │
+         ▼
+ Análisis mediante IA
+         │
+         ▼
+Reflexión personalizada
 ```
 
-El flujo implementado contempla onboarding, selección de modo, presentación de dilemas, decisiones bajo tiempo limitado y registro de respuestas. :contentReference[oaicite:5]{index=5}
+REFLEXA no analiza únicamente una elección aislada. El conjunto de respuestas permite proporcionar más contexto al momento de generar la reflexión final.
 
 ---
 
-## 01 — Menú principal
+## Funcionalidades 🎯
 
-Después del onboarding, REFLEXA presenta el **menú central de la aplicación**.
+### Experiencia
 
-Desde aquí comienza la navegación hacia la experiencia, además de permitir acceder a información del proyecto y ajustes.
+- Dilemas interactivos
+- Decisiones con tiempo limitado
+- Modo normal
+- Modo laboral
+- Dilemas mediante imagen
+- Dilemas mediante texto
+- Dilemas mediante audio
+- Registro de decisiones durante la sesión
 
-<p align="center">
-  <img src="./public/menú.png" width="700" alt="Menú principal de REFLEXA">
-</p>
+### Interfaz
 
-El sistema también permite personalizar elementos como idioma, accesibilidad, volumen y asistencia durante la experiencia.
+- Onboarding
+- Personalización mediante nombre
+- Español e inglés
+- Ajustes de accesibilidad
+- Control de volumen
+- Sistema de temas
+- Hollow como guía de la experiencia
 
----
+### Inteligencia Artificial
 
-## 02 — Hollow
-
-REFLEXA incorpora a **Hollow**, el personaje que acompaña al usuario durante el recorrido.
-
-<p align="center">
-  <img src="./public/hollow.png" width="400" alt="Hollow - guía de REFLEXA">
-</p>
-
-Hollow introduce y explica diferentes partes de la experiencia antes de que el usuario avance hacia los dilemas.
-
-Su función forma parte de la presentación narrativa de REFLEXA: la interacción no comienza directamente con una batería de preguntas, sino con una interfaz que prepara al usuario para comprender qué está haciendo y cómo avanzar.
-
----
-
-## 03 — Selección de contexto
-
-REFLEXA permite cambiar el contexto desde el cual se presentan las situaciones.
-
-<p align="center">
-  <img src="./public/modo.png" width="700" alt="Selección entre modo normal y laboral">
-</p>
-
-### Modo normal
-
-Presenta dilemas desde un contexto general y permite utilizar REFLEXA como una experiencia individual de reflexión y toma de decisiones.
-
-### Modo laboral
-
-Traslada la experiencia hacia situaciones relacionadas con el **entorno profesional y organizacional**.
-
-Este modo permite trabajar con escenarios donde pueden existir presión por resultados, jerarquías, incertidumbre o conflictos entre intereses personales y organizacionales.
-
-El código de REFLEXA contempla explícitamente la separación entre **Modo normal y Modo laboral** dentro de su navegación. :contentReference[oaicite:6]{index=6}
+- Procesamiento del contexto de la sesión
+- Análisis del conjunto de elecciones
+- Generación de retroalimentación
+- Comunicación mediante backend independiente
+- API key protegida fuera del frontend
 
 ---
 
-## 04 — Tipos de experiencia
+## Inteligencia Artificial 🤖
 
-Una vez elegido el contexto, REFLEXA permite seleccionar la forma en la que se presentarán los dilemas.
+La inteligencia artificial aparece al final del recorrido como una capa de análisis.
 
-<p align="center">
-  <img src="./public/modo2.png" width="700" alt="Selección de modos de REFLEXA">
-</p>
+Las decisiones realizadas durante la sesión se convierten en contexto para generar una reflexión que busca identificar **relaciones, tensiones, coincidencias o contrastes entre las elecciones**.
 
-### 🖼️ Imagen
+La intención no es producir una puntuación automática sobre la persona.
 
-El escenario se comunica principalmente mediante información visual.
+REFLEXA utiliza la IA para enriquecer la retroalimentación y ayudar a observar el conjunto de decisiones desde otra perspectiva.
 
-### 📝 Texto
-
-La situación se presenta mediante una descripción escrita y diferentes alternativas.
-
-### 🔊 Audio
-
-El usuario recibe información mediante contenido auditivo antes de tomar una decisión.
-
-La aplicación dispone de vistas específicas para dilemas de texto, imagen y audio dentro de su arquitectura. :contentReference[oaicite:7]{index=7}
-
----
-
-## 05 — La prueba
-
-Aquí ocurre la parte central de REFLEXA.
-
-<p align="center">
-  <img src="./public/prueba.png" width="700" alt="Ejemplo de prueba interactiva de REFLEXA">
-</p>
-
-El usuario recibe una situación y debe elegir entre las alternativas disponibles dentro de un **tiempo limitado**.
-
-REFLEXA registra las decisiones realizadas durante la sesión para posteriormente utilizarlas como contexto de la retroalimentación.
-
-El interés no está únicamente en **qué opción fue elegida**, sino en observar el conjunto de decisiones dentro de los escenarios presentados.
-
----
-
-# 🤖 Inteligencia Artificial
-
-La IA funciona como la última capa de la experiencia.
-
-REFLEXA puede utilizar las decisiones registradas para **identificar tendencias y generar retroalimentación personalizada**, enriqueciendo la reflexión sin convertir el resultado en una calificación rígida. :contentReference[oaicite:8]{index=8}
-
-Actualmente el flujo técnico de generación funciona así:
+### Arquitectura de IA
 
 ```text
-┌─────────────────────┐
-│       Usuario       │
-└──────────┬──────────┘
+┌──────────────────────┐
+│       Usuario        │
+└──────────┬───────────┘
            │
            ▼
-┌─────────────────────┐
-│       REFLEXA       │
-│   React + Vite      │
-│      Netlify        │
-└──────────┬──────────┘
+┌──────────────────────┐
+│       REFLEXA        │
+│    React + Vite      │
+│       Netlify        │
+└──────────┬───────────┘
            │
            ▼
-┌─────────────────────┐
-│  Cloudflare Worker  │
-│      Backend        │
-└──────────┬──────────┘
+┌──────────────────────┐
+│  Cloudflare Worker   │
+│       Backend        │
+└──────────┬───────────┘
            │
            ▼
-┌─────────────────────┐
-│      Groq API       │
-│    GPT-OSS 20B      │
-└──────────┬──────────┘
+┌──────────────────────┐
+│       Groq API       │
+│    GPT-OSS 20B       │
+└──────────┬───────────┘
            │
            ▼
-┌─────────────────────┐
-│     Reflexión       │
-│    personalizada    │
-└─────────────────────┘
+┌──────────────────────┐
+│      Reflexión       │
+│    personalizada     │
+└──────────────────────┘
 ```
 
-La comunicación con IA se realiza mediante un backend independiente para evitar exponer la clave secreta en el cliente. El proyecto utiliza `VITE_REFLEXION_API_URL` para configurar ese servicio. :contentReference[oaicite:9]{index=9}
+El frontend no almacena la API key utilizada para comunicarse con Groq.
+
+Las solicitudes pasan primero por un **Cloudflare Worker**, que funciona como intermediario entre REFLEXA y el servicio de inteligencia artificial.
 
 ---
 
-# 🧠 Principios del proyecto
+## Aplicación en Recursos Humanos 🧩
 
-### Decisiones en contexto
+REFLEXA está pensada como una herramienta que puede complementar procesos donde interesa observar la toma de decisiones dentro de situaciones contextualizadas.
 
-Una misma persona puede responder de forma diferente dependiendo de las condiciones que rodean una decisión.
+### Reclutamiento y selección
 
-### Sin respuestas absolutas
+Los candidatos pueden enfrentarse a escenarios relacionados con situaciones laborales en lugar de limitar la interacción a preguntas directas.
 
-Los dilemas permiten enfrentar alternativas donde la solución no necesariamente puede reducirse a “bien” o “mal”.
+### Capacitación
 
-### Reflexión antes que juicio
+Los dilemas pueden utilizarse para trabajar situaciones relacionadas con ética, responsabilidad, comunicación o toma de decisiones.
 
-REFLEXA busca proporcionar información sobre las decisiones tomadas sin convertir la experiencia en una sentencia sobre el usuario.
+### Desarrollo organizacional
 
-### Tecnología como complemento
+La plataforma permite construir experiencias alrededor de problemas y tensiones que pueden existir dentro de una organización.
 
-La inteligencia artificial procesa el contexto de la sesión para producir retroalimentación, pero la propuesta mantiene la reflexión del usuario como elemento central.
+### Consultoría
 
----
+El sistema puede utilizarse como base para experiencias interactivas desarrolladas alrededor de necesidades específicas de una organización.
 
-# 🛠️ Stack tecnológico
-
-| Tecnología | Uso |
-|---|---|
-| **React 18** | Construcción de interfaz mediante componentes y hooks |
-| **Vite 6** | Desarrollo, empaquetado y build |
-| **JavaScript** | Lógica principal de la aplicación |
-| **CSS** | Diseño y estilos de interfaz |
-| **Context API** | Estado compartido de usuario y tema |
-| **Cloudflare Workers** | Backend intermediario para IA |
-| **Groq API** | Generación de retroalimentación |
-| **GPT-OSS 20B** | Modelo utilizado actualmente |
-| **Netlify** | Hosting de la aplicación |
-
-El núcleo documentado del frontend utiliza React 18, Vite 6, JavaScript ES Modules y CSS. :contentReference[oaicite:10]{index=10}
+REFLEXA no pretende sustituir el criterio profesional de Recursos Humanos. Su función es ofrecer **otra fuente de contexto** dentro de una evaluación o experiencia de desarrollo.
 
 ---
 
-# 🏗️ Arquitectura del frontend
+## Stack tecnológico 🛠️
 
-REFLEXA es una **Single Page Application (SPA)**.
+| Tecnología | Función |
+| --- | --- |
+| **React 18** | Construcción de la interfaz |
+| **Vite 6** | Desarrollo y build |
+| **JavaScript ES Modules** | Lógica de la aplicación |
+| **CSS** | Diseño visual |
+| **Context API** | Estado compartido |
+| **Cloudflare Workers** | Backend intermediario |
+| **Groq API** | Inferencia de IA |
+| **GPT-OSS 20B** | Generación de reflexión |
+| **Netlify** | Hosting y deployment |
 
-No utiliza `react-router`. La navegación se controla internamente mediante el estado `view` en `App.jsx`, renderizando la pantalla correspondiente según el punto del recorrido en el que se encuentra el usuario. :contentReference[oaicite:11]{index=11}
+---
+
+## Arquitectura del proyecto 🏗️
+
+REFLEXA funciona como una **Single Page Application (SPA)**.
+
+La navegación entre las diferentes pantallas se gestiona mediante el estado de la aplicación y renderizado condicional.
 
 ```text
 REFLEXA/
 │
 ├── public/
-│   └── assets e imágenes
 │
 ├── src/
 │   ├── components/
@@ -302,33 +334,33 @@ REFLEXA/
 │   ├── utils/
 │   │
 │   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
+│   └── main.jsx
 │
-├── vite.config.js
-└── package.json
+├── index.html
+├── package.json
+└── vite.config.js
 ```
 
-La estructura separa componentes, pantallas, datos de dilemas, traducciones, hooks, estilos y utilidades para mantener la lógica organizada. :contentReference[oaicite:12]{index=12}
+La estructura separa componentes, pantallas, datos de los dilemas, traducciones, estado global, estilos y funciones auxiliares.
 
 ---
 
-# 🌎 Internacionalización
+## Internacionalización 🌎
 
-REFLEXA cuenta con soporte para:
+REFLEXA contempla soporte para:
 
-**🇲🇽 Español · 🇺🇸 Inglés**
+**🇲🇽 Español · 🇺🇸 English**
 
-El sistema utiliza un diccionario propio de traducciones y mantiene el idioma seleccionado dentro del contexto del usuario, sin depender de una biblioteca externa de internacionalización. :contentReference[oaicite:13]{index=13}
+El idioma seleccionado se conserva durante la experiencia y modifica los elementos correspondientes de la interfaz.
 
 ---
 
-# 🚀 Ejecutar localmente
+## Instalación 📥
 
 ### 1. Clonar el repositorio
 
 ```bash
-git clone URL-DE-TU-REPOSITORIO
+git clone https://github.com/Francisco336007501/REFLEXA.git
 ```
 
 ### 2. Entrar al proyecto
@@ -343,81 +375,79 @@ cd REFLEXA
 npm install
 ```
 
-### 4. Iniciar Vite
+### 4. Iniciar el entorno de desarrollo
 
 ```bash
 npm run dev
 ```
 
-Los scripts documentados también incluyen:
+### Build de producción
 
 ```bash
 npm run build
+```
+
+### Probar el build
+
+```bash
 npm run preview
 ```
 
-`npm run build` genera `dist/`, mientras que `npm run preview` permite probar localmente el build de producción. :contentReference[oaicite:14]{index=14}
-
 ---
 
-# 🔐 Configuración de IA
+## Configuración de IA 🔐
 
-El frontend puede utilizar:
+El endpoint utilizado para generar las reflexiones puede configurarse mediante una variable de entorno:
 
 ```env
 VITE_REFLEXION_API_URL=https://TU-WORKER.workers.dev
 ```
 
-La clave privada de Groq **no debe almacenarse en el frontend**.
+La clave privada utilizada para acceder a Groq debe permanecer únicamente en el backend.
 
 ```text
 Frontend
    │
-   │  petición
    ▼
 Cloudflare Worker
    │
    │  GROQ_API_KEY
    ▼
-Groq
+Groq API
 ```
 
-De esta forma, la credencial permanece del lado del backend y no queda expuesta dentro del código enviado al navegador.
+> ⚠️ Las claves privadas nunca deben publicarse dentro del repositorio ni incluirse directamente en el frontend.
 
 ---
 
-# 🎯 Aplicaciones
+## Demo 🌐
 
-REFLEXA contempla dos enfoques principales:
+REFLEXA está disponible directamente desde el navegador:
 
-**B2B**
+### 👉 [iareflexa.netlify.app](https://iareflexa.netlify.app/)
 
-Empresas, departamentos de Recursos Humanos, capacitación, desarrollo organizacional y consultoras.
-
-**B2C**
-
-Estudiantes, profesionistas y usuarios interesados en pensamiento crítico, ética y toma de decisiones.
-
-El proyecto también contempla posibles integraciones con universidades, plataformas educativas y programas empresariales. :contentReference[oaicite:15]{index=15}
+La versión publicada puede utilizarse sin instalar el proyecto localmente.
 
 ---
 
-# 🔭 Visión
+## Objetivo 🎯
 
-REFLEXA combina **simulación, dilemas, desarrollo web e inteligencia artificial** para construir una experiencia donde una decisión no se observa de forma aislada.
+REFLEXA explora una idea central:
 
-El proyecto parte de una idea sencilla:
+> **Una decisión no existe aislada del contexto en el que fue tomada.**
 
-> **El contexto también forma parte de una decisión.**
+El proyecto combina **desarrollo web, experiencia de usuario, simulación de dilemas, Recursos Humanos e inteligencia artificial** para construir una forma diferente de explorar la toma de decisiones.
 
 ---
 
 <div align="center">
 
-## REFLEXA
+# REFLEXA
 
-**Decide · Duda · Obsérvate**
+### Decide · Duda · Obsérvate
 
-[🌐 Abrir REFLEXA](https://iareflexa.netlify.app/)
+**El espejo es el mismo.**
+
+[🌐 **Probar REFLEXA**](https://iareflexa.netlify.app/)
 
 </div>
